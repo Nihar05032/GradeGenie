@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+.navbar-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar-nav li a:hover {
+    color: #ddd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #ff0000;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.card {
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.card p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card.blue {
+    background-color: #1e90ff; 
+}
+
+.card.red {
+    background-color: #ff4d4d; /* Red */
+}
+
+.card.green {
+    background-color: #5cb85c; /* Green */
+}
+
+.card.darkpink {
+    background-color: #ff1493; /* Dark Pink */
+}
+
+.card.yellow {
+    background-color: #f0ad4e; /* Yellow */
+}
+
+.card.darkblue {
+    background-color: #00008b; /* Dark Blue */
+}
+
+.card.darkgreen {
+    background-color: #006400; /* Dark Green */
+}
+
+.card.pink {
+    background-color: #ffc0cb; /* Pink */
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
