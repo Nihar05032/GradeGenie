@@ -1,88 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Registration Form</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>GradeGenie</title>
 </head>
-
 <body>
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu sidebaropen' ></i>
+            <span class="logo navLogo"><a href="#">Grade Genie</a></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">Grade Genie</a></span>
+                    <i class='bx bx-x sidebarclose' ></i>
+                </div>
+                <ul class="nav-link">
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="assessment.html">Assessment</a></li>
+                    <li><a href="result.html">Result</a></li>
+                    <li><a href="setting.html">Settings</a></li>
+                </ul>
 
-    <div class="wrapper">
-        <span class="bg animate"></span>
-
-        <!-- Login Form -->
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <input type="text" required>
-                    <label>Username</label>
-                    <i class='bx bxs-user'></i>
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
                 </div>
-                <div class="input-box">
-                    <input type="password" required>
-                    <label>Password</label>
-                    <i class='bx bxs-lock-alt'></i>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="logreg-link">
-                    <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
-                </div>
-            </form>
+            </div>
         </div>
-
-        <!-- Registration Form -->
-        <div class="form-box register">
-            <h2>Register</h2>
-            <form action="#">
-                <div class="input-box">
-                    <input type="text" required>
-                    <label>Username</label>
-                    <i class='bx bxs-user'></i>
-                </div>
-                <div class="input-box">
-                    <input type="email" required>
-                    <label>Email</label>
-                    <i class='bx bxs-envelope'></i>
-                </div>
-                <div class="input-box">
-                    <input type="password" required>
-                    <label>Password</label>
-                    <i class='bx bxs-lock-alt'></i>
-                </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="logreg-link">
-                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
-                </div>
-            </form>
-        </div>
-
-        <div class="info-text">
-            <h2>Welcome Back!</h2>
+    </nav>
+    <div class="scrollbar">
+        <div class="container">
+            <div class="dashboard">
+                <a href="ecs.html" class="card blue">
+                    <h2>ECS</h2>
+                    <p>Students-120</p>
+                </a>
+                <a href="comps.html" class="card red">
+                    <h2>COMPS</h2>
+                    <p>Students-180</p>
+                </a>
+                <a href="extc.html" class="card green">
+                    <h2>EXTC</h2>
+                    <p>Students-60</p>
+                </a>
+                <a href="cyber.html" class="card darkpink">
+                    <h2>CYBER</h2>
+                    <p>Students-60</p>
+                </a>
+                <a href="it.html" class="card yellow">
+                    <h2>IT</h2>
+                    <p>Students-120</p>
+                </a>
+                <a href="vlsi.html" class="card darkblue">
+                    <h2>VLSI</h2>
+                    <p>Students-60</p>
+                </a>
+                <a href="act.html" class="card darkgreen">
+                    <h2>ACT</h2>
+                    <p>Students-60</p>
+                </a>
+                <a href="aids.html" class="card pink">
+                    <h2>AIDS</h2>
+                    <p>Students-60</p>
+                </a>
+            </div>
         </div>
     </div>
-
-    <script>
-        const loginForm = document.querySelector('.login');
-        const registerForm = document.querySelector('.register');
-        const loginLink = document.querySelector('.login-link');
-        const registerLink = document.querySelector('.register-link');
-
-        registerLink.addEventListener('click', () => {
-            loginForm.style.display = 'none';
-            registerForm.style.display = 'block';
-        });
-
-        loginLink.addEventListener('click', () => {
-            registerForm.style.display = 'none';
-            loginForm.style.display = 'block';
-        });
-    </script>
 </body>
-
 </html>
+    <script src="script.js"></script>
+
