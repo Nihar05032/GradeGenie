@@ -1,29 +1,38 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #0ef;
     margin: 0;
     padding: 0;
+    
 }
 
 header {
-    background-color: #333;
+    background-color: #081b29;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     position: relative;
+}
+.G {
+    color: #f0ad4e;
+    font-size: 0.8cm;
+    font-family: cursive;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
-    padding: 0 20px;
+    padding: 0px 20px;
 }
 
 .navbar-brand {
     font-size: 24px;
     font-weight: bold;
+    margin-right: 40%;
+    padding: auto;
+    margin-bottom: 10px;
 }
 
 .navbar-nav {
@@ -38,28 +47,61 @@ header {
 }
 
 .navbar-nav li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s;
 }
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #077184;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a{
+    color: rgb(1, 12, 15);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #84e4f5;
+    transition: .5s;
+}
 
 .navbar-nav li a:hover {
-    color: #ddd;
+    color: #055867;
+    font-weight: bold;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 40px auto;
     padding: 0 20px;
+}
+.logo{
+    width: 60px;
+    margin-top: -10px;
+    border: 2px solid #0ef;
+    background-color: #0ef;
 }
 
 h1 {
     color: #ff0000;
-    text-align: center;
+    text-align: left;
     font-size: 24px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    padding-left: 6%;
+    position: relative;
+    top: -70px;
+
 }
 
 .dashboard {
@@ -69,7 +111,7 @@ h1 {
 }
 
 .card {
-    padding: 20px;
+    padding: 60px;
     text-align: center;
     border-radius: 4px;
     color: white;
