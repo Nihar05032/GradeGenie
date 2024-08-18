@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>GradeGenie</title>
 </head>
@@ -22,6 +23,7 @@
                     <li><a href="index.html">Dashboard</a></li>
                     <li><a href="assessment.html">Assessment</a></li>
                     <li><a href="result.html">Result</a></li>
+                    <li><a href="tt.html">Time Table</a></li>
                     <li><a href="setting.html">Settings</a></li>
                 </ul>
 
@@ -36,7 +38,12 @@
     </nav>
     <div class="scrollbar">
         <div class="container">
+            <button class="add" id="add-std"><i class="fa-solid fa-plus"></i>Add Student</button>
             <div class="dashboard">
+                <a href="it.html" class="card yellow">
+                    <h2>IT</h2>
+                    <p>Students-120</p>
+                </a>
                 <a href="ecs.html" class="card blue">
                     <h2>ECS</h2>
                     <p>Students-120</p>
@@ -53,10 +60,6 @@
                     <h2>CYBER</h2>
                     <p>Students-60</p>
                 </a>
-                <a href="it.html" class="card yellow">
-                    <h2>IT</h2>
-                    <p>Students-120</p>
-                </a>
                 <a href="vlsi.html" class="card darkblue">
                     <h2>VLSI</h2>
                     <p>Students-60</p>
@@ -69,6 +72,27 @@
                     <h2>AIDS</h2>
                     <p>Students-60</p>
                 </a>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Student Info</h2>
+                <div class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Student name"><br>
+                    <label for="email">Email Id</label>
+                    <input type="text" id="email" placeholder="Student email"><br>
+                    <label for="prn">PRN</label>
+                    <input type="text" id="prn" placeholder="Student PRN"><br>
+                    <label for="branch">Branch</label>
+                    <input type="text" id="branch" placeholder="Branch"><br>
+                    <label for="div">Division</label>
+                    <input type="text" id="div" placeholder="Division">
+                </div>
+                <div class="form-element">
+                    <button>ADD</button>
+                </div>
             </div>
         </div>
     </div>
