@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     height: 100vh;
     background-color: white;
 }
-body.dark{
+
+body.dark {
     height: 100vh;
     background-color: #081b29;   
 }
-nav{
+
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,7 +26,8 @@ nav{
     background-color: #081b29;
     z-index: 100;
 }
-.navbar{
+
+.navbar {
     position: relative;
     height: 100%;
     max-width: 1000px;
@@ -36,31 +39,37 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.navbar .sidebaropen{
+
+.navbar .sidebaropen {
     color: #0ef;
     font-size: 25px;
     padding: 5px;
     cursor: pointer;
     display: none;
 }
-.navbar .logo a{
+
+.navbar .logo a {
     font-size: 25px;
     font-weight: 500;
     color: #0ef;
     text-decoration: none;
 }
-.menu .logo-toggle{
+
+.menu .logo-toggle {
     display: none;
 }
-.navbar .nav-link{
+
+.navbar .nav-link {
     display: flex;
     align-items: center;
 }
-.navbar .nav-link li{
+
+.navbar .nav-link li {
     margin: 0 5px;
     list-style: none;
 }
-.nav-link li a{
+
+.nav-link li a {
     position: relative;
     font-size: 17px;
     font-weight: 400;
@@ -68,7 +77,8 @@ nav{
     text-decoration: none;
     padding: 10px;
 }
-.nav-link li a::before{
+
+.nav-link li a::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -81,16 +91,19 @@ nav{
     opacity: 0;
     transition: all 0.3s ease;
 }
-.nav-link li:hover a::before{
+
+.nav-link li:hover a::before {
     opacity: 1;
     background-color: #0ef;
     border: radius 3px;
 }
-.navbar .darkLight-searchBox{
+
+.navbar .darkLight-searchBox {
     display: flex;
     align-items: center;
 }
-.darkLight-searchBox .dark-light{
+
+.darkLight-searchBox .dark-light {
     height: 40px;
     width: 40px;
     display: flex;
@@ -98,31 +111,35 @@ nav{
     justify-content: center;
     margin: 0 5px;
 }
-.dark-light i{
+
+.dark-light i {
     position: absolute;
     color: #0ef;
     font-size: 22px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.dark-light i.sun{
-    opacity: 0;
-    pointer-events: none;
-}
-.dark-light.active i.sun{
-    opacity: 1;
-    pointer-events: auto;
-}
-.dark-light.active i.moon{
+
+.dark-light i.sun {
     opacity: 0;
     pointer-events: none;
 }
 
-@media (max-width: 790px){
-    .navbar .sidebaropen{
+.dark-light.active i.sun {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 790px) {
+    .navbar .sidebaropen {
         display: block;
     }
-    .menu{
+    .menu {
         position: fixed;
         height: 100%;
         width: 320px;
@@ -133,40 +150,41 @@ nav{
         z-index: 100;
         transition: all 0.4s ease;
     }
-    nav.active .menu{
+    nav.active .menu {
         left: 0;
     }
-    nav.active .navbar .navLogo a{
+    nav.active .navbar .navLogo a {
         opacity: 0;
         transition: all 0.3s ease;
     }
-
-    .menu .logo-toggle{
+    .menu .logo-toggle {
         display: block;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .logo-toggle .sidebarclose{
+    .logo-toggle .sidebarclose {
         color: #0ef;
         font-size: 24px;   
         cursor: pointer;    
     }
-    .navbar .nav-link{
+    .navbar .nav-link {
         flex-direction: column;
         padding-top: 30px;
     }
-    .nav-link li a{
+    .nav-link li a {
         display: block;
         margin-top: 20px;
     }
 }
+
 .container {
     max-width: 1400px;
     margin: 40px auto;
     padding: 0 20px;
 }
+
 h1 {
     color: #ff0000;
     text-align: left;
@@ -176,7 +194,6 @@ h1 {
     padding-left: 6%;
     position: relative;
     top: -70px;
-
 }
 
 .dashboard {
@@ -210,7 +227,6 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 .card.blue {
     background-color: #1e90ff; 
 }
@@ -242,6 +258,7 @@ h1 {
 .card.pink {
     background-color: #ffc0cb; /* Pink */
 }
+
 @media (max-width: 768px) {
     .dashboard {
         grid-template-columns: 1fr 1fr;
@@ -252,15 +269,14 @@ h1 {
     .dashboard {
         grid-template-columns: 1fr;
     }
-
     .navbar-nav {
         display: none;
     }
-
     .menu-toggle {
         display: block;
     }
 }
+
 /* Dropdown Button */
 .dropdown-btn {
     background-color: #0ef;
@@ -285,6 +301,23 @@ h1 {
     border: 1px solid #ccc;
 }
 
+/* Ensure the nested dropdowns are hidden initially */
+.dropdown-content .dropdown-content-1, 
+.dropdown-content .dropdown-content-2 {
+    display: none;
+}
+
+/* Show the dropdown content when active */
+.dropdown-btn.active + .dropdown-content {
+    display: block;
+}
+
+/* Adjust the nested dropdown to be visible when active */
+.dropdown-content .dropdown-content-1.active, 
+.dropdown-content .dropdown-content-2.active {
+    display: block;
+}
+
 /* Links inside the dropdown */
 .dropdown-content a {
     color: #081b29;
@@ -304,10 +337,12 @@ h1 {
 .dropdown-btn.active + .dropdown-content {
     display: block;
 }
+
 html, body {
     height: 100%;         /* Ensure the body takes the full height */
     overflow: auto;      /* Enable scroll bars if needed */
 }
+
 /* For WebKit browsers */
 .scrollbar::-webkit-scrollbar {
     width: 12px; /* Width of the scrollbar */
@@ -332,9 +367,9 @@ html, body {
     border: 1px solid #081b29; /* Optional border */
     padding: 10px; /* Optional padding */
 }
-.fas{
+
+.fas {
     float: right;
     margin-left: 10px;
     padding-top: 3px;
 }
-
