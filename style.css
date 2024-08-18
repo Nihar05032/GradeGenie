@@ -83,6 +83,8 @@ nav{
 }
 .nav-link li:hover a::before{
     opacity: 1;
+    background-color: #0ef;
+    border: radius 3px;
 }
 .navbar .darkLight-searchBox{
     display: flex;
@@ -330,3 +332,9 @@ html, body {
     border: 1px solid #081b29; /* Optional border */
     padding: 10px; /* Optional padding */
 }
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
