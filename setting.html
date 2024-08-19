@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Setting</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -47,46 +48,28 @@
             <div class="profile-info">
                 <h2>Your Name</h2>
                 <p>Your Institution</p>
-                <button class="edit-profile-btn" onclick="showEditProfile()">Edit Profile</button>
             </div>
+            <button class="add2" id="add-std"><i class="fa-solid fa-user"></i>  Edit Profile</button>
         </div>
-    
-        <!-- Editable Profile Form -->
-        <div class="profile-container" id="editProfileContainer">
-            <div class="header">
-                Edit Profile
-            </div>
-            <div class="profile-content">
-                <!-- Profile Information -->
-                <div class="profile-info">
-                    <div>
-                        <span>ID:</span>
-                        <input type="text" placeholder="Enter ID">
-                    </div>
-                    <div>
-                        <span>Full Name:</span>
-                        <input type="text" placeholder="Enter Full Name">
-                    </div>
-                    <div>
-                        <span>Contact Number:</span>
-                        <input type="text" placeholder="Enter Contact Number">
-                    </div>
-                    <div>
-                        <span>Email:</span>
-                        <input type="text" placeholder="Enter Email">
-                    </div>
-                    <div>
-                        <span>College:</span>
-                        <input type="text" placeholder="Enter College Name">
-                    </div>
-                    <div>
-                        <span>Roll No.:</span>
-                        <input type="text" placeholder="Enter Roll Number">
-                    </div>
+        <div class="popup">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Student Info</h2>
+                <div class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Student name"><br>
+                    <label for="email">Email Id</label>
+                    <input type="text" id="email" placeholder="Student email"><br>
+                    <label for="prn">PRN</label>
+                    <input type="text" id="prn" placeholder="Student PRN"><br>
+                    <label for="branch">Branch</label>
+                    <input type="text" id="branch" placeholder="Branch"><br>
+                    <label for="div">Division</label>
+                    <input type="text" id="div" placeholder="Division">
                 </div>
-    
-                <!-- Save Profile Button -->
-                <button class="edit-profile-btn">Save Profile</button>
+                <div class="form-element">
+                    <button>ADD</button>
+                </div>
             </div>
         </div>
     </header>
