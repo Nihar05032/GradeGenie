@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Engineering</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -22,6 +23,7 @@
                         <li><a href="index.html">Dashboard</a></li>
                         <li><a href="assessment.html">Assessment</a></li>
                         <li><a href="result.html">Result</a></li>
+                        <li><a href="tt.html">Time Table</a></li>
                         <li><a href="setting.html">Settings</a></li>
                     </ul>
     
@@ -39,16 +41,40 @@
     <div class="container">
         <h1>Computer Engineering</h1>
         <div class="year-dropdown">
-            <button class="dropdown-btn">Select Year &#9660;</button>
+            <button class="dropdown-btn">Select Year <i class="fas fa-caret-down"></i></button>
             <div class="dropdown-content">
-                <a href="#">First Year</a>
-                <a href="#">Second Year</a>
-                <a href="#">Third Year</a>
-                <a href="#">Final Year</a>
+                    <a href="#">First Year <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content-1">
+                    <ul>
+                        <a href="#">FE-5</a>
+                        <a href="#">FE-6</a>
+                        
+                    </ul>
+                </div>
+                    <a href="#">Second Year <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content-2">
+                        <ul>
+                            <a href="#">SE-5</a>
+                            <a href="#">SE-6</a>
+                        </ul>
+                    </div>
+                    <a href="#">Third Year <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content-1">
+                        <ul>
+                            <a href="#">TE-5</a>
+                            <a href="#">TE-6</a>
+                        </ul>
+                    </div>
+                    <a href="#">Final Year <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content-1">
+                        <ul>
+                            <a href="#">BE-5</a>
+                            <a href="#">BE-6</a>
+                        </ul>
+                    </div>
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
