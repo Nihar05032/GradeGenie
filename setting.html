@@ -22,6 +22,7 @@
                         <li><a href="index.html">Dashboard</a></li>
                         <li><a href="assessment.html">Assessment</a></li>
                         <li><a href="result.html">Result</a></li>
+                        <li><a href="tt.html">Time Table</a></li>
                         <li><a href="setting.html">Settings</a></li>
                     </ul>
     
@@ -34,8 +35,61 @@
                 </div>
             </div>
         </nav>
+        <!-- Profile Section -->
+        <div class="profile-section" id="profileSection">
+            <div class="profile-photo">
+                <img id="profileImage" src="https://via.placeholder.com/120" alt="Profile Photo">
+                <label for="profilePicInput" class="edit-icon">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/pencil.png" width="5%" alt="Edit">
+                </label>
+                <input type="file" id="profilePicInput" accept="image/*" onchange="loadProfilePhoto(event)">
+            </div>
+            <div class="profile-info">
+                <h2>Your Name</h2>
+                <p>Your Institution</p>
+                <button class="edit-profile-btn" onclick="showEditProfile()">Edit Profile</button>
+            </div>
+        </div>
+    
+        <!-- Editable Profile Form -->
+        <div class="profile-container" id="editProfileContainer">
+            <div class="header">
+                Edit Profile
+            </div>
+            <div class="profile-content">
+                <!-- Profile Information -->
+                <div class="profile-info">
+                    <div>
+                        <span>ID:</span>
+                        <input type="text" placeholder="Enter ID">
+                    </div>
+                    <div>
+                        <span>Full Name:</span>
+                        <input type="text" placeholder="Enter Full Name">
+                    </div>
+                    <div>
+                        <span>Contact Number:</span>
+                        <input type="text" placeholder="Enter Contact Number">
+                    </div>
+                    <div>
+                        <span>Email:</span>
+                        <input type="text" placeholder="Enter Email">
+                    </div>
+                    <div>
+                        <span>College:</span>
+                        <input type="text" placeholder="Enter College Name">
+                    </div>
+                    <div>
+                        <span>Roll No.:</span>
+                        <input type="text" placeholder="Enter Roll Number">
+                    </div>
+                </div>
+    
+                <!-- Save Profile Button -->
+                <button class="edit-profile-btn">Save Profile</button>
+            </div>
+        </div>
     </header>
-
-    <script src="script.js"></script>
 </body>
 </html>
+    <script src="script.js"></script>
