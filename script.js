@@ -77,6 +77,18 @@ document.querySelector("#add-std").addEventListener("click",function(){
 document.querySelector(".popup .close-btn").addEventListener("click",function(){
   document.querySelector(".popup").classList.remove("active");
 });
+// Function to update the profile picture when a new one is selected
+function loadProfilePhoto(event) {
+  const profileImage = document.getElementById('profileImage');
+  profileImage.src = URL.createObjectURL(event.target.files[0]);
+}
+
+// Function to show the edit profile form and hide the profile section
+function showEditProfile() {
+  document.getElementById('profileSection').style.display = 'none';
+  document.getElementById('editProfileContainer').style.display = 'block';
+}
+
     
       
       
